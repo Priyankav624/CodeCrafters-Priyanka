@@ -10,7 +10,7 @@ const HomeImages = () => {
       setTextIndex((prevIndex) =>
         prevIndex === alternativeTexts.length - 1 ? 0 : prevIndex + 1
       );
-    }, 2000);
+    }, 1000);
 
     return () => clearInterval(intervalId);
   }, [alternativeTexts]);
@@ -26,8 +26,8 @@ const HomeImages = () => {
               <h1 style={{fontSize:"55px",fontWeight: "bold"}}> {Text}  </h1>
               <small style={{fontSize:"25px", color:"#b2beb5", fontWeight: "bold"}}>Order food from favourite restaurants near you.</small>
             <br/><br/> <br/>  <form>
-              <input style={{height:"50px" ,border:"1px solid grey", width: "400px", padding: "5px", fontSize:"20px", fontWeight: "bold"}} type='text' name='location' placeholder={"Enter your devlivery location"}></input>
-              <button style={{backgroundColor: "#FFA500" , border: "none" , height:"62px", marginLeft:"-1px" ,fontWeight: "bold"}}>FIND FOOD</button>
+              <input style={{height:"50px" ,border:"1px solid grey", width: "400px", padding: "10px",paddingLeft: "20px", fontSize:"20px", fontWeight: "bold"}} type='text' name='location' placeholder={"Enter your devlivery location"}></input>
+              <button style={{backgroundColor: "#FFA500" , border: "none" , height:"68px", marginLeft:"-1px" ,fontWeight: "bold"}}>FIND FOOD</button>
               </form>
               <br/>
               <p style={{color:"#6a6c6d  ",fontWeight: "bold", fontSize:"25px"}}>POPULAR CITIES IN INDIA </p>
@@ -35,12 +35,12 @@ const HomeImages = () => {
           </div>
           
           <div>
-          <img src='https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,h_1340/Lunch1_vlksgq' height={500} width={"100%"}/>
+          <img style={{ width: '100%', height: '100%', objectFit: 'cover' }} src='https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,h_1340/Lunch1_vlksgq' />
           </div>
     </div>
     </div>
   )
 }
 
-export default HomeImages
+export default HomeImages;
 
