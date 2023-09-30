@@ -31,7 +31,7 @@ const Signup = () => {
 
 
 return <Box  display={"flex"} justifyContent={"center"} flexDirection={"column"} alignItems={"center"} height={"100vh"}>
-<Typography variant="h5" component={"h5"} gutterBottom>Log In</Typography>
+<Typography variant="h5" component={"h5"} gutterBottom>Sign Up</Typography>
 <FormControl>
     <TextField 
         fullWidth 
@@ -73,7 +73,7 @@ return <Box  display={"flex"} justifyContent={"center"} flexDirection={"column"}
         variant="contained" 
         size="large" 
         onClick={login}
-    >Login</Button>
+    >Signup</Button>
 </FormControl>
 </Box>
 }

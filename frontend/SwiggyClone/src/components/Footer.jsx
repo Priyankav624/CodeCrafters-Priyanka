@@ -3,7 +3,7 @@ import React from 'react'
 
 const Footer = () => {
   return (
-    <div style={{display: "flex", border:"1px solid black", padding:"10px", backgroundColor: "Black", color:"white", justifyContent: "flex-start"}}>
+    <div style={{display: "flex", border:"1px solid black", padding:"40px", backgroundColor: "Black", color:"white", justifyContent: "flex-start"}}>
         <Container>
           <Typography variant='h6'>Swiggy</Typography>
           <Typography variant='body2' >©2023 Bundl Technologies Pvt. Ltd</Typography>
@@ -14,6 +14,9 @@ const Footer = () => {
            <Typography variant="body2" >About</Typography>
            <Typography variant="body2" >Careers</Typography>
            <Typography variant="body2" >Team</Typography>
+           <Typography variant="body2" >Swiggy Blog</Typography>
+           <Typography variant="body2" >Swiggy Genie</Typography>
+           <Typography variant="body2" >Swiggy One</Typography>
         </Container>
         <Container>
            <Typography variant="h6" >Contact us</Typography>
@@ -23,7 +26,7 @@ const Footer = () => {
         </Container>
         <Container>
            <Typography variant="h6" >We deliver to:</Typography>
-           <Typography variant="body2" >We deliver to:</Typography>
+           <Typography variant="body2" >Mumbai</Typography>
            <Typography variant="body2" >Bangalore</Typography>
            <Typography variant="body2" >Hyderabad</Typography>
            <Typography variant='body2' > Gurgaon</Typography>

@@ -12,9 +12,14 @@ const NavBar = () => {
 
   return (
     <>
-    <AppBar position="fixed" style={{"backgroundColor":"#FFA500"}}>
+    <AppBar position="fixed" style={{backgroundColor:"#FFA500", zIndex:200}}>
         <Toolbar>
-            <Typography variant="h6"  sx={{flexGrow: 1}}>Swiggy</Typography>
+             <Typography variant="h6"  sx={{flexGrow: 1}}><img
+            src="https://pnggallery.com/wp-content/uploads/swiggy-logo-01.png"
+            alt="Swiggy Logo"
+            style={{ marginRight: "10px", height: "95px", width: "95px" }}
+          />
+          </Typography>
 
             {loggedin? 
                 <> 
