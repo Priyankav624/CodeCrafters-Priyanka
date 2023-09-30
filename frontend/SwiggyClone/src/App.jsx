@@ -1,8 +1,8 @@
 import { useState } from 'react'
 import { BrowserRouter as Router , Routes , Route} from "react-router-dom"
-import BodyMain from './assets/components/BodyMain'
-import Footer from './assets/components/Footer'
-import NavBar from './assets/components/NavBar'
+import BodyMain from './components/BodyMain'
+import Footer from './components/Footer'
+import NavBar from './components/NavBar'
 
 function App() {
   return (

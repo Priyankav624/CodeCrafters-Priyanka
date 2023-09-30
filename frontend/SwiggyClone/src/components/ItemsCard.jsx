@@ -11,17 +11,16 @@ const ItemsCard = () => {
     <CardActionArea>
        <CardMedia
          component="img"
-         height="140"
-         image="/static/images/cards/contemplative-reptile.jpg"
-         alt="green iguana"
+         height="170"
+         image="https://imgs.search.brave.com/eh1kFQat9s7ZMT25nVhZLpJub-_zvIrb8Qu95hGsKy4/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvMTQ4/NjUxNjkxOS9waG90/by9kb3NhLmpwZz9z/PTYxMng2MTImdz0w/Jms9MjAmYz1PeHFI/ckVRc1dTN2ZXSkdj/UTdaaldHVDhKVkp4/bG9HVTU2ZTlVZkE5/anhZPQ"
+         alt="Dosa"
        />
            <CardContent>
            <Typography gutterBottom variant="h5" component="div">
-               Lizard
+               Dosa
            </Typography>
            <Typography variant="body2" color="text.secondary">
-               Lizards are a widespread group of squamate reptiles, with over 6,000
-               species, ranging across all continents except Antarctica
+               Plain, Masala, Egg
            </Typography>
            </CardContent>
        </CardActionArea>
