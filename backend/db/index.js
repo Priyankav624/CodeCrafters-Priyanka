@@ -1,9 +1,5 @@
 import mongoose from "mongoose";
 
-const foodCategorySchema = mongoose.Schema({
-    CategoryName: String
-})
-
 const foodItemsSchema = mongoose.Schema({
     CategoryName: String,
     name: String,
@@ -12,8 +8,14 @@ const foodItemsSchema = mongoose.Schema({
     description: String
 })
 
+const foodCategorySchema = mongoose.Schema({
+    CategoryName: String
+})
+
+ export const Category =  mongoose.model('food_category' , foodCategorySchema);
+
 //  const Category = mongoose.model('food_category' , foodCategorySchema);
- export default mongoose.model('food_items' , foodItemsSchema);
+ export const Food =  mongoose.model('food_items' , foodItemsSchema);
 
 
 

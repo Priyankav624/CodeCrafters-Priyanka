@@ -1,7 +1,6 @@
 import express from "express";
 import mongoose from "mongoose";
 import cors from "cors";
-import  Food  from "./db/index.js"
 import routes from './routes/index.js'
 
 const app = express();
@@ -24,7 +23,7 @@ const db = mongoose.connection;
 
 db.once('open',async ()=>{
     console.log(' db connected');
-    const food = await Food.find({});
+    // const food = await Food.find({});
     // console.log(food)
 
 })
