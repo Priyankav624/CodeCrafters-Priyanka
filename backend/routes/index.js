@@ -14,4 +14,15 @@ router.post('/createuser',async (req,res)=>{
     }
 })
 
+router.post("/login" , async (req , res)=>{
+    const { username , password } = req.body;
+    const user = await User.findOne({username , password })
+    if(user){
+        // const token = jwt.sign({ id: user._id } , secret , {expiresIn: "1hr"});
+        res.json({message: "logged in successfully" })
+    } else {
+        res.json({err: "invalid credentials"}).status(403)
+    }
+})
+
 export default router;

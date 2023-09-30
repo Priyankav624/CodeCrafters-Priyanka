@@ -25,6 +25,6 @@ const db = mongoose.connection;
 db.once('open',async ()=>{
     console.log(' db connected');
     const food = await Food.find({});
-    console.log(food)
+    // console.log(food)
 
 })
