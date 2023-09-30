@@ -7,7 +7,7 @@ const HomeImages = () => {
             <h4>Hungry?  </h4>
             <small>Order food from favourite restaurants near you.</small>
             <form>
-            <input type='text' name='location' value={"Enter your devlivery location"}></input>
+            <input type='text' name='location' placeholder={"Enter your devlivery location"}></input>
             <button>FIND FOOD</button></form>
             <p>POPULAR CITIES IN INDIA </p>
             <p>Ahmedabad Bangalore Chennai Delhi Gurgaon Hyderabad Kolkata Mumbai Pune& more.</p>
