@@ -13,7 +13,7 @@ const NavBar = () => {
   return (
     <>
     <AppBar position="fixed" style={{"backgroundColor":"#FFA500"}}>
-        <Toolbar >
+        <Toolbar>
             <Typography variant="h6"  sx={{flexGrow: 1}}>Swiggy</Typography>
 
             {loggedin? 
@@ -22,11 +22,14 @@ const NavBar = () => {
                     <Button color="inherit">Logout</Button>
                 
                 </> : <>  
-                    <Button color="inherit" size="large">LogIn</Button>
-                    <Button color="inherit" size="large">SignUp</Button>
+                    <Button color="inherit" size="large" onClick={()=>{
+                        navigate('/login')
+                    }}>LogIn</Button>
+                    <Button color="inherit" size="large" onClick={()=>{
+                        navigate('/signup')
+                    }}>SignUp</Button>
                 </>
             }
-            
         </Toolbar>
     </AppBar>
     </>
