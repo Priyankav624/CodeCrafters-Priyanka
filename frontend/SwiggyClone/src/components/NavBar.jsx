@@ -18,13 +18,15 @@ const NavBar = () => {
     <>
     <AppBar  style={{ position:"fixed",backgroundColor:"#fc8019"}}>
         <Toolbar>
-             <Typography variant="h6"  sx={{flexGrow: 1}}>
-                <a href = " http://localhost:5173/">
+             <Typography variant="h6" sx={{flexGrow: 1}} onClick={() => {
+                                navigate("/")
+                    }}>
+
                 <img 
                 src="http://www.pngimagesfree.com/LOGO/S/Swiggy/Swiggy-Logo-Vector.png"
                 alt="Swiggy Logo"
                 style={{ margin: "15px", height: "70px", width: "95px" }}
-          /> </a>
+          /> 
           
           </Typography>
 
