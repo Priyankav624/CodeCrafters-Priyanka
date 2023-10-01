@@ -25,7 +25,7 @@ const Login = () => {
             userName: username,
             isLoading: false
         })
-          navigate('/');
+          navigate('/hotel');
       })
       .catch(err => console.error(err))
   }
@@ -46,6 +46,7 @@ const Login = () => {
               fullWidth 
               variant="outlined" 
               label="Password" 
+              type='password'
               margin="normal" 
               sx={{marginBottom:"1rem", marginTop:"0rem"}} 
               value={password}

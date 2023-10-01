@@ -13,8 +13,7 @@ const ItemsCard = (props) => {
     const [size , setSize ] = useState(priceOptions[0])
     const sizeHandler = (e) => setSize(e.target.value);
     let finalprice = qty * props.price;
-
-
+    
 
   return (
     <Card sx={{ maxWidth: "360px" , width: "18rem", marginTop: "100px"}}>

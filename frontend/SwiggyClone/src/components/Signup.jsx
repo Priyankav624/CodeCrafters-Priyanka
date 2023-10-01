@@ -24,7 +24,7 @@ const Signup = () => {
           console.log(res.data.msg)
           
           // localStorage.setItem("token" , res.data.token)
-          navigate('/');
+          navigate('/hotel');
       })
       .catch(err => console.error(err))
   }
@@ -46,6 +46,7 @@ return <Box  display={"flex"} justifyContent={"center"} flexDirection={"column"}
         fullWidth 
         variant="outlined" 
         label="Password" 
+        type='password'
         margin="normal" 
         sx={{marginBottom:"1rem", marginTop:"0rem"}} 
         value={password}
@@ -56,6 +57,7 @@ return <Box  display={"flex"} justifyContent={"center"} flexDirection={"column"}
         variant="outlined" 
         value={email} 
         label="Email" 
+        type='Email'
         margin="normal" 
         sx={{marginBottom: "1rem" , marginTop:"0rem"}} 
         onChange={emailHandler}

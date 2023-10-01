@@ -7,6 +7,7 @@ import Login from './components/Login'
 import Signup from './components/Signup'
 import { RecoilRoot } from "recoil"
 import Order from './components/Order'
+import Hotel from './components/Hotel'
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
               <Route path={"/login"} element = {<Login />} />
               <Route path={"/signup"} element = {<Signup />} />
               <Route path={"/order"} element={<Order />} />
+              <Route path={"/hotel"} element={<Hotel />} />
           </Routes>
         <Footer />
       </Router>

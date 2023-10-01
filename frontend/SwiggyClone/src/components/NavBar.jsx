@@ -19,25 +19,29 @@ const NavBar = () => {
     <AppBar  style={{ position:"fixed",backgroundColor:"#fc8019"}}>
         <Toolbar>
              <Typography variant="h6"  sx={{flexGrow: 1}}>
-                <img src="http://www.pngimagesfree.com/LOGO/S/Swiggy/Swiggy-Logo-Vector.png"
+                <a href = " http://localhost:5173/">
+                <img 
+                src="http://www.pngimagesfree.com/LOGO/S/Swiggy/Swiggy-Logo-Vector.png"
                 alt="Swiggy Logo"
                 style={{ margin: "15px", height: "70px", width: "95px" }}
-          />
+          /> </a>
+          
           </Typography>
-          <Button color="inherit" sx={{marginRight:"1rem"}} onClick={() => {
-                                navigate("/order")
-                    }}
-                    >Order</Button>
 
             {userName? 
                 <> 
+                    <Typography variant="h6" component={"span"} sx={{marginRight:"1rem"}}>{userName}</Typography>
+                    <Button color="inherit" sx={{marginRight:"1rem"}} onClick={() => {
+                                navigate("/hotel")
+                    }}>Hotels</Button>
+                    <Button color="inherit" sx={{marginRight:"1rem"}} onClick={() => {
+                                navigate("/order")
+                    }}
+                    >Order</Button>
                     <Button color="inherit" sx={{marginRight:"1rem"}} onClick={() => {
                                 navigate("/myCart")
                     }}
                     >My Cart</Button>
-                    
-                    <Typography variant="h6" component={"span"} sx={{marginRight:"1rem"}}>{userName}</Typography>
-                    
                     <Button color="inherit" onClick={() => {
                             localStorage.setItem("token", null);
                             setUser({
@@ -47,6 +51,7 @@ const NavBar = () => {
                         }}>Logout</Button>
                 
                 </> : <>  
+    
                     <Button color="inherit" size="large" onClick={()=>{
                         navigate('/login')
                     }}>LogIn</Button>
@@ -63,49 +68,3 @@ const NavBar = () => {
 
 export default NavBar
 
-
-// function Header(){
-    
-
-//     // useEffect(()=>{
-//     //     axios.get('http://localhost:3000/admin/me' , {
-//     //         headers: {
-//     //             Authorization: "Bearer " + localStorage.getItem("token")
-//     //         }
-//     //      }).then( res => {
-//     //         setLoggedin(true);
-//     //         setUsername(res.data.username);
-//     //      })
-//     // } ,[])
-
-//     // const logoutHandler = ()=>{
-//     //     setLoggedin(false);
-//     //     localStorage.removeItem("token");
-//     //     setUsername("");
-//     // }
-
-//     return <>
-//     <AppBar position="fixed">
-//         <Toolbar >
-//             <Typography variant="h6"  sx={{flexGrow: 1}}>Courseflix</Typography>
-
-//             {loggedin? 
-//                 <> 
-//                     <Typography variant="subtitle1" component={"span"} sx={{marginRight:"1rem"}}>{username}</Typography>
-//                     <Button color="inherit" onClick={logoutHandler} >Logout</Button>
-                
-//                 </> : <>  
-//                     <Button color="inherit" size="large" onClick={()=>{
-//                         navigate('/login')
-//                     }}>LogIn</Button>
-//                     <Button color="inherit" size="large" onClick={()=>{
-//                         navigate('/signup')
-//                     }}>SignUp</Button>
-//                 </>
-//             }
-            
-            
-//         </Toolbar>
-//     </AppBar>
-//     </>
-// }

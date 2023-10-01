@@ -21,18 +21,17 @@ const Middle = () => {
                 <p>Experience Swiggy's superfast delivery for food delivered fresh & on time</p>
             </div>
         </div>
-        <div style={{ display : "grid", gridTemplateColumns:"1fr 1fr"}}>
+        <div style={{ display : "grid", gridTemplateColumns:"1fr 1fr" , marginBottom:"60px"}}>
             <div>
-                <h1 style={{color:"#000000 ", fontWeight: "bold", marginTop:"50px" , marginLeft:"80px", fontSize:"55px"}}> Restaurants in your pocket</h1>
-                <p style={{marginLeft:"80px", fontSize:"20px", color:"#6a6c6d" ,  marginBottom:"40px"}}>Order from your favorite restaurants & track on the go, with the all-new Swiggy app.</p>
-                <img style={{ width: '150px', height: '70px' , marginLeft:"80px"}}src='https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,h_108/play_ip0jfp'></img>
-                <img style={{ width: '150px', height: '70px' , marginLeft:"80px"}}src='https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,h_108/iOS_ajgrty'></img>
+                <h1 style={{color:"#000000 ", fontWeight: "bold", marginTop:"50px" , marginLeft:"80px", fontSize:"55px"}}> Restaurants in <br />your pocket</h1>
+                <p style={{marginLeft:"80px", fontSize:"20px", color:"#6a6c6d" ,  marginBottom:"40px"}}>Order from your favorite restaurants & track on <br></br>the go, with the all-new Swiggy app.</p>
+                <img style={{ width: '150px', height: '50px' , marginLeft:"80px"}}src='https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,h_108/play_ip0jfp'></img>
+                <img style={{ width: '150px', height: '50px' , marginLeft:"80px"}}src='https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,h_108/iOS_ajgrty'></img>
                 
             </div>
             <div style={{textAlign:"center"}}>
                 <img style={{ width: '250px', height: '400px' }}src='https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_768,h_978/pixel_wbdy4n'></img>
-                <img style={{ width: '250px', height: '350px' ,marginBottom:"-5px"}}src='https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_768,h_978/iPhone_wgconp_j0d1fn'></img>
-
+                <img style={{ width: '250px', height: '350px', marginBottom:"-49px"}}src='https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_768,h_978/iPhone_wgconp_j0d1fn'></img>
             </div>
         </div>
     </div>

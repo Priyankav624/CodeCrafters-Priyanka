@@ -12,7 +12,7 @@ const Order = () => {
     setFoodItem(response.data.food);
     setFoodCategory(response.data.category);
   };
-
+  
   useEffect(() => {
     init();
   }, []);
@@ -51,6 +51,7 @@ const Order = () => {
         </div>
       )}
     </div>
+    
   );
 };
 
