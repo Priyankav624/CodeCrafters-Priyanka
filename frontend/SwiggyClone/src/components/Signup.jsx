@@ -2,8 +2,7 @@ import React from 'react'
 import { useState } from "react"
 import { useNavigate } from "react-router-dom"
 import { Box, FormControl, TextField, Typography , Button } from "@mui/material";
-import axios from "axios";
-
+import axios from '../axios';
 
 const Signup = () => {
   const [username , setUsername ] = useState("");
@@ -19,7 +18,7 @@ const Signup = () => {
 
 
   const login = () => {
-      axios.post('http://localhost:3000/api/createuser',{username,password,location,email})
+      axios.post('/api/createuser',{username,password,location,email})
       .then(res => {
           console.log(res.data.msg)
           

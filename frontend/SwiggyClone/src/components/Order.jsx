@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import ItemsCard from './ItemsCard';
-import axios from 'axios';
+import axios from '../axios';
 import '../Order.css';
 
 const Order = () => {
@@ -8,7 +8,7 @@ const Order = () => {
   const [foodCategory, setFoodCategory] = useState([]);
 
   const init = async () => {
-    const response = await axios.get(`http://localhost:3000/api/foodData`);
+    const response = await axios.get(`/api/foodData`);
     setFoodItem(response.data.food);
     setFoodCategory(response.data.category);
   };

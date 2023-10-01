@@ -4,7 +4,7 @@ import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 import { Button, CardActionArea, CardActions, MenuItem, Select } from '@mui/material';
-import axios from 'axios';
+
 
 const ItemsCard = (props) => {
     let options = props.options;
