@@ -35,6 +35,7 @@ const Order = () => {
                         options={filteredItem.options[0]}
                         img={filteredItem.img}
                         desc={filteredItem.description}
+                        price={filteredItem.price}
                       />
                     </div>
                   ))
