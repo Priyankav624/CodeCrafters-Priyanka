@@ -1,11 +1,13 @@
 import mongoose from "mongoose";
 
+
 const foodItemsSchema = mongoose.Schema({
     CategoryName: String,
     name: String,
     img:String,
     options: Array ,
-    description: String
+    description: String,
+    price:String
 })
 
 const foodCategorySchema = mongoose.Schema({

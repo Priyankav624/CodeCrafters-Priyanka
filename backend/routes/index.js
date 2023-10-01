@@ -49,4 +49,12 @@ router.get("/foodData" , async (req , res) => {
     res.json({ food, category });
 })
 
+router.get('/addtocart', authenticateJwt, async (req, res) => {
+    const user = await User.findOne({ username: req.user.username }).populate('cartItems');
+    if (user) {
+      res.json({ cartItems: user.cartItems || [] });
+    } else {
+      res.status(403).json({ message: 'User not found' });
+    }
+  });
 export default router;
