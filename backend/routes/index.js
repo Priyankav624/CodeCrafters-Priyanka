@@ -43,10 +43,10 @@ router.post("/login" , async (req , res)=>{
 })
 
 router.get("/foodData" , async (req , res) => {
-    const food = await Food.find({});
-    // const category = await Category.find({});
-    // console.log(category)
-    res.json(food)
+    // const food = await Food.find({});
+    const [food, category] = await Promise.all([Food.find({}), Category.find({})]);
+    // console.log(food, category);
+    res.json({ food, category });
 })
 
 export default router;

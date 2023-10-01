@@ -3,12 +3,16 @@ import { useState } from "react"
 import { useNavigate } from "react-router-dom"
 import { Box, FormControl, TextField, Typography , Button } from "@mui/material";
 import axios from "axios";
+import {useSetRecoilState} from "recoil";
+import {userState} from "../store/atoms/user.js";
 
 
 const Login = () => {
   const [username , setUsername ] = useState("");
   const [password , setPassword ] = useState("");
   const navigate = useNavigate();
+  const setUser = useSetRecoilState(userState);
+
 
   const usernameHandler = (e) => setUsername(e.target.value);
   const passwordHandler = (e) => setPassword(e.target.value);
@@ -16,7 +20,11 @@ const Login = () => {
       axios.post('http://localhost:3000/api/login',{username , password})
       .then(res => {
           console.log(res.data.msg)
-          // localStorage.setItem("token" , res.data.token)
+          localStorage.setItem("token" , res.data.token)
+          setUser({
+            userName: username,
+            isLoading: false
+        })
           navigate('/');
       })
       .catch(err => console.error(err))
