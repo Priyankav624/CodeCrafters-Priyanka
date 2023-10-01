@@ -18,13 +18,13 @@ const Order = () => {
   }, []);
 
   return (
-    <div>
+    <div className='grid-container ' style={{margin:"100px", marginTop: " 160px" }}>
       {foodCategory.length !== 0 ? (
         foodCategory.map((category) => (
           <div key={category._id} className="category-container">
             <h3>{category.CategoryName}</h3>
             <hr />
-            <div className="card-grid">
+            <div className="card-grid" >
               {foodItem.length !== 0 ? (
                 foodItem
                   .filter((item) => item.CategoryName === category.CategoryName)
