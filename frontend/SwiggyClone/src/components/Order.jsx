@@ -17,9 +17,9 @@ const Order = () => {
   }, []);
 
     return (
-      <div>
+      <div style={{marginTop: "1000px" }}>
       {
-        foodCategory !== [] ? 
+        foodCategory !== 0 ? 
           foodCategory.map(data => {
             return (<div> 
               
@@ -29,7 +29,7 @@ const Order = () => {
               
               <hr />
               
-              { foodItem !== [] ? foodItem.filter(item => item.CategoryName === item.CategoryName)
+              { foodItem !== 0 ? foodItem.filter(item => item.CategoryName === item.CategoryName)
               .map(filteredItem => {
                 return (
                   <div key={filteredItem._id}>
