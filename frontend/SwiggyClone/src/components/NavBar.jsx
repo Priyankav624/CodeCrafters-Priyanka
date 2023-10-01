@@ -16,12 +16,12 @@ const NavBar = () => {
 
   return (
     <>
-    <AppBar  style={{ position:"fixed",backgroundColor:"#FFA500"}}>
+    <AppBar  style={{ position:"fixed",backgroundColor:"#fc8019"}}>
         <Toolbar>
-             <Typography variant="h6"  sx={{flexGrow: 1}}><img
-            src="https://pnggallery.com/wp-content/uploads/swiggy-logo-01.png"
-            alt="Swiggy Logo"
-            style={{ marginRight: "10px", height: "95px", width: "95px" }}
+             <Typography variant="h6"  sx={{flexGrow: 1}}>
+                <img src="http://www.pngimagesfree.com/LOGO/S/Swiggy/Swiggy-Logo-Vector.png"
+                alt="Swiggy Logo"
+                style={{ margin: "15px", height: "70px", width: "95px" }}
           />
           </Typography>
           <Button color="inherit" sx={{marginRight:"1rem"}} onClick={() => {

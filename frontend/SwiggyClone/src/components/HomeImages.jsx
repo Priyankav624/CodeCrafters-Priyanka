@@ -25,9 +25,9 @@ const HomeImages = () => {
           <div style={{margin:"40px"}}>
               <h1 style={{fontSize:"55px",fontWeight: "bold"}}> {Text}  </h1>
               <small style={{fontSize:"25px", color:"#b2beb5", fontWeight: "bold"}}>Order food from favourite restaurants near you.</small>
-            <br/><br/> <br/>  <form>
+            <br/><br/> <br/>  <form style={{display:"grid" , gridTemplateColumns: "1fr 150px"}}>
               <input style={{height:"50px" ,border:"1px solid grey", width: "400px", padding: "10px",paddingLeft: "20px", fontSize:"20px", fontWeight: "bold"}} type='text' name='location' placeholder={"Enter your devlivery location"}></input>
-              <button style={{backgroundColor: "#FFA500" , border: "none" , height:"68px", marginLeft:"-1px" ,fontWeight: "bold"}}>FIND FOOD</button>
+              <button style={{backgroundColor: "#FFA500" , border: "none" , height:"72px", marginLeft:"-6px" ,fontWeight: "bold"}}>FIND FOOD</button>
               </form>
               <br/>
               <p style={{color:"#6a6c6d  ",fontWeight: "bold", fontSize:"25px"}}>POPULAR CITIES IN INDIA </p>

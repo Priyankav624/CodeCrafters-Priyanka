@@ -1,14 +1,19 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 import { Button, CardActionArea, CardActions, MenuItem, Select } from '@mui/material';
+import axios from 'axios';
 
 const ItemsCard = (props) => {
     let options = props.options;
     let priceOptions = Object.keys(options);
-    const addToCartHandler = (e) => setUsername(e.target.value);
+    const [qty , setQty ] = useState(1);
+    const [size , setSize ] = useState(priceOptions[0])
+    const sizeHandler = (e) => setSize(e.target.value);
+    let finalprice = qty * props.price;
+
 
 
   return (
@@ -22,7 +27,9 @@ const ItemsCard = (props) => {
             <Typography variant="body2" color="text.secondary" gutterBottom>
                 {props.desc}
             </Typography>
-            <Select value={1}>
+            <Select value={qty} onChange={(e)=>{
+                setQty(e.target.value)
+            }}>
                 {
                     Array.from(Array(6),(e,i) => {
                         return (
@@ -31,19 +38,19 @@ const ItemsCard = (props) => {
                     }
                 )}
             </Select>
-            <Select value={priceOptions[0]}>
+            <Select value={size} onChange={sizeHandler}>
                     { priceOptions.map((data) => {
                             return <MenuItem key={data} value={data} >{data}</MenuItem>
                     })}
             </Select >
             <Typography  style={{paddingTop:15}} variant="h5" component="div">
-                Total Price
+                Total Price: ₹{finalprice}
             </Typography>
            </CardContent>
            
        </CardActionArea>
        <CardActions>
-           <Button size="small" color="primary" onClick={addToCartHandler}>
+           <Button size="small" color="primary">
                 Add to Cart
            </Button>
      </CardActions>
@@ -51,4 +58,4 @@ const ItemsCard = (props) => {
   )
 }
 
-export default ItemsCard
+export default ItemsCard
