@@ -24,15 +24,20 @@ const NavBar = () => {
             style={{ marginRight: "10px", height: "95px", width: "95px" }}
           />
           </Typography>
-
-            {userName? 
-                <> 
-                    
-                    <Typography variant="h6" component={"span"} sx={{marginRight:"1rem"}}>{userName}</Typography>
-                    <Button color="inherit" sx={{marginRight:"1rem"}} onClick={() => {
+          <Button color="inherit" sx={{marginRight:"1rem"}} onClick={() => {
                                 navigate("/order")
                     }}
                     >Order</Button>
+
+            {userName? 
+                <> 
+                    <Button color="inherit" sx={{marginRight:"1rem"}} onClick={() => {
+                                navigate("/myCart")
+                    }}
+                    >My Cart</Button>
+                    
+                    <Typography variant="h6" component={"span"} sx={{marginRight:"1rem"}}>{userName}</Typography>
+                    
                     <Button color="inherit" onClick={() => {
                             localStorage.setItem("token", null);
                             setUser({

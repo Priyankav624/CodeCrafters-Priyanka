@@ -8,6 +8,8 @@ import { Button, CardActionArea, CardActions, MenuItem, Select } from '@mui/mate
 const ItemsCard = (props) => {
     let options = props.options;
     let priceOptions = Object.keys(options);
+    const addToCartHandler = (e) => setUsername(e.target.value);
+
 
   return (
     <Card sx={{ maxWidth: "360px" , width: "18rem", marginTop: "100px"}}>
@@ -21,11 +23,6 @@ const ItemsCard = (props) => {
                {props.desc}
            </Typography>
            </CardContent>
-       </CardActionArea>
-       <CardActions>
-           {/* <Button size="small" color="primary">
-           Share
-           </Button> */}
            <Select value={1}>
                {
                    Array.from(Array(6),(e,i) => {
@@ -40,7 +37,12 @@ const ItemsCard = (props) => {
                         return <MenuItem key={data} value={data} >{data}</MenuItem>
                    })}
            </Select>
-           <div style={{display: "inline"}}>Total Price</div>
+           <div> Total Price</div>
+       </CardActionArea>
+       <CardActions>
+           <Button size="small" color="primary" onClick={addToCartHandler}>
+                Add to Cart
+           </Button>
      </CardActions>
   </Card>
   )
