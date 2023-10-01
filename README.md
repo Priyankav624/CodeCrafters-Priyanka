@@ -60,6 +60,31 @@ Technology: Integration of React, Node.js, Express.js, MongoDB, and Recoil.
 The Swiggy project combines these modules and technologies to create a modern and user-friendly online food ordering platform. It focuses on delivering a smooth user experience while ensuring the security and efficiency of data handling.
 
 
+![1](https://github.com/Sanjaydotv/CodeCrafters-Priyanka/assets/94473786/b047f43a-be3b-40a4-9f86-5c37205feba1)
+
+![2](https://github.com/Sanjaydotv/CodeCrafters-Priyanka/assets/94473786/754f1c08-901e-43e4-b7ed-bc24c24d85a9)
+
+![2b](https://github.com/Sanjaydotv/CodeCrafters-Priyanka/assets/94473786/ee800013-dacc-46ce-ae33-73c7ea0a1a3c)
+
+![3](https://github.com/Sanjaydotv/CodeCrafters-Priyanka/assets/94473786/a738ebbe-327d-4a7d-8f34-2d957baef1ab)
+
+![4](https://github.com/Sanjaydotv/CodeCrafters-Priyanka/assets/94473786/46890388-36ba-441a-9c22-5d12d197f1bd)
+
+![5](https://github.com/Sanjaydotv/CodeCrafters-Priyanka/assets/94473786/1ddac2b7-9045-494d-af1a-a5dcb3c01015)
+
+![6](https://github.com/Sanjaydotv/CodeCrafters-Priyanka/assets/94473786/858b39dc-de3b-4a03-b388-66e80509f96c)
+
+![7](https://github.com/Sanjaydotv/CodeCrafters-Priyanka/assets/94473786/39430742-4e2a-43fc-ad8e-d5e647ca6d48)
+
+![2a](https://github.com/Sanjaydotv/CodeCrafters-Priyanka/assets/94473786/c1378a1d-060f-45f2-a22d-0ed32b914f66)
+
+![8](https://github.com/Sanjaydotv/CodeCrafters-Priyanka/assets/94473786/143c29bd-a984-4c6d-90a4-b7daeacc27cf)
+
+
+
+
+
+
 
 
 
