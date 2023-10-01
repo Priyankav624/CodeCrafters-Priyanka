@@ -10,6 +10,11 @@ app.use(express.json());
 
 app.use('/api/', routes)
 
+app.use(express.static("public"));
+app.get('/*',(req , res) =>{
+    res.sendFile(path.join(__dirname,'/public/index.html'));
+})
+
 
 app.listen(3000,()=>{
     console.log("server is running in port 3000");
