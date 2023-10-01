@@ -5,7 +5,8 @@ import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 import { Button, CardActionArea, CardActions, MenuItem, Select } from '@mui/material';
 
-const ItemsCard = () => {
+const ItemsCard = (props) => {
+
   return (
     <Card sx={{ maxWidth: "360px" , width: "18rem", marginTop: "100px"}}>
     <CardActionArea>
@@ -28,16 +29,17 @@ const ItemsCard = () => {
            <Button size="small" color="primary">
            Share
            </Button>
-           <Select>
+           <Select value={1}>
                {
-                   Array.from(Array(6),(i) => {
+                   Array.from(Array(6),(e,i) => {
                        return (
                        <MenuItem key={i+1} value={i+1} >{i+1}</MenuItem>
                        )
                    }
                )}
            </Select>
-           <Select>
+           <Select value={"half"}>
+            
                <MenuItem value="half" >half</MenuItem>
                <MenuItem value="full" >full</MenuItem>
            </Select>
