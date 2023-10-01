@@ -16,28 +16,31 @@ const ItemsCard = (props) => {
     <CardActionArea>
             <img src={props.img} height="170" />
            <CardContent>
-           <Typography gutterBottom variant="h5" component="div">
-               {props.foodName}
-           </Typography>
-           <Typography variant="body2" color="text.secondary">
-               {props.desc}
-           </Typography>
+            <Typography gutterBottom variant="h5" component="div">
+                {props.foodName}
+            </Typography>
+            <Typography variant="body2" color="text.secondary" gutterBottom>
+                {props.desc}
+            </Typography>
+            <Select value={1}>
+                {
+                    Array.from(Array(6),(e,i) => {
+                        return (
+                        <MenuItem key={i+1} value={i+1} >{i+1}</MenuItem>
+                        )
+                    }
+                )}
+            </Select>
+            <Select value={priceOptions[0]}>
+                    { priceOptions.map((data) => {
+                            return <MenuItem key={data} value={data} >{data}</MenuItem>
+                    })}
+            </Select >
+            <Typography  style={{paddingTop:15}} variant="h5" component="div">
+                Total Price
+            </Typography>
            </CardContent>
-           <Select value={1}>
-               {
-                   Array.from(Array(6),(e,i) => {
-                       return (
-                       <MenuItem key={i+1} value={i+1} >{i+1}</MenuItem>
-                       )
-                   }
-               )}
-           </Select>
-           <Select value={"half"}>
-                   { priceOptions.map((data) => {
-                        return <MenuItem key={data} value={data} >{data}</MenuItem>
-                   })}
-           </Select>
-           <div> Total Price</div>
+           
        </CardActionArea>
        <CardActions>
            <Button size="small" color="primary" onClick={addToCartHandler}>
