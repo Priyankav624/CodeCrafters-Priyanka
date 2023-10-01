@@ -1,56 +1,56 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useState } from 'react';
 import ItemsCard from './ItemsCard';
 import axios from 'axios';
+import '../Order.css';
 
 const Order = () => {
-    const [foodItem , setFoodItem ] = useState([]);
-    const [foodCategory , setFoodCategory] = useState([]);
+  const [foodItem, setFoodItem] = useState([]);
+  const [foodCategory, setFoodCategory] = useState([]);
 
-    const init = async () => {
-      const response = await axios.get(`http://localhost:3000/api/foodData`)
-      setFoodItem(response.data.food);
-      setFoodCategory(response.data.category);   
-  }
+  const init = async () => {
+    const response = await axios.get(`http://localhost:3000/api/foodData`);
+    setFoodItem(response.data.food);
+    setFoodCategory(response.data.category);
+  };
 
   useEffect(() => {
-      init();
+    init();
   }, []);
 
-    return (
-      <div>
-      {
-        foodCategory !== [] ? 
-          foodCategory.map(data => {
-            return (<div> 
-              
-              <div key={data._id}>
-                {data.CategoryName}
-              </div>
-              
-              <hr />
-              
-              { foodItem !== [] ? foodItem.filter(item => item.CategoryName === item.CategoryName)
-              .map(filteredItem => {
-                return (
-                  <div key={filteredItem._id}>
-                    <ItemsCard 
+  return (
+    <div>
+      {foodCategory.length !== 0 ? (
+        foodCategory.map((category) => (
+          <div key={category._id} className="category-container">
+            <h3>{category.CategoryName}</h3>
+            <hr />
+            <div className="card-grid">
+              {foodItem.length !== 0 ? (
+                foodItem
+                  .filter((item) => item.CategoryName === category.CategoryName)
+                  .map((filteredItem) => (
+                    <div key={filteredItem._id} className="card">
+                      <ItemsCard
                         foodName={filteredItem.name}
                         options={filteredItem.options[0]}
-                        imgSrc = {filteredItem.img}
-                    />
-                  </div>
-                )
-              }) 
-              : (
+                        img={filteredItem.img}
+                        desc={filteredItem.description}
+                      />
+                    </div>
+                  ))
+              ) : (
                 <div>No Foods Available</div>
-              )} 
-            
-            </div>)
-          }) : <div><h2>No Foods Available</h2></div>
-      }
-
+              )}
+            </div>
+          </div>
+        ))
+      ) : (
+        <div>
+          <h2>No Foods Available</h2>
+        </div>
+      )}
     </div>
-    )
-}
+  );
+};
 
-export default Order
+export default Order;
