@@ -40,7 +40,7 @@ const Footer = () => {
         <div style={{marginRight:"-20px", backgroundColor:"white"}} >
             <hr ></hr>
         </div>
-        <div style={{display:"flex", justifyContent:"center", fontSize:"25px", backgroundColor:"black", marginRight:"-20px",marginTop:"-2px"}}> 
+        <div style={{display:"flex", justifyContent:"center", fontSize:"25px", backgroundColor:"black", marginRight:"-20px", marginLeft:"-10px", marginTop:"-2px"}}> 
             <img style={{height: "70px", width:"80px", margin:"10px", marginLeft:"30px"}} src="https://imgs.search.brave.com/4456AxXu6O3bsEvXCKxEjJ6Bl4gwoVe8HtCiBQyBFFE/rs:fit:860:0:0/g:ce/aHR0cHM6Ly90NC5m/dGNkbi5uZXQvanBn/LzA0Lzk5LzcyLzA5/LzM2MF9GXzQ5OTcy/MDk5NV9zZm1Vb1dv/bTUwa3gyNUNZY09p/WUxWeEJPc3RkYjVq/ai5qcGc" alt="clothing"></img>  
             <h3 style={{color:"white"}}>Cloths</h3>
         </div>

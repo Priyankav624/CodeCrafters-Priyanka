@@ -19,15 +19,15 @@ function Hotel() {
           <CardMedia
             component="img"
             height="190"
-            image="https://imgs.search.brave.com/25LoUoVDyODoLeh6a5HxoaqoTL_yw088pvYZHb2r9XQ/rs:fit:860:0:0/g:ce/aHR0cHM6Ly90aHVt/YnMuZHJlYW1zdGlt/ZS5jb20vYi9vcmll/bnRhbC1mb29kLTI1/MTg5NjUyLmpwZw"
-            alt="Velore Kitchen"
+            image="https://imgs.search.brave.com/HvdDyCE8G9mIujye0X2S7qGnN7sjSoU7pA_DM0a5ZmM/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9tLm1l/ZGlhLWFtYXpvbi5j/b20vaW1hZ2VzL0kv/NjFTNmZycGpZcUwu/anBn"
+            alt="dress"
           />
           <CardContent>
             <Typography gutterBottom variant="h5" component="div">
-              Velore Kitchen
+              Mobiles
             </Typography>
             <Typography variant="body2" color="text.secondary">
-               Biriyani , Fried Rice, Starters, Pizza etc...
+              Redmi,Moto, Iphone,Galaxy etc...
             </Typography>
           </CardContent>
         </CardActionArea>
@@ -39,15 +39,15 @@ function Hotel() {
             <CardMedia
                 component="img"
                 height="190"
-                image="https://imgs.search.brave.com/aA5nEBZ7kZaJRPdBFdFYZ9WQUvPnKFfH-h--Qd-8mxE/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvNjEw/NzQyNzI2L3Bob3Rv/L3N0cmVldC1mb29k/LmpwZz9zPTYxMng2/MTImdz0wJms9MjAm/Yz12SGFLQ01oWXF5/WVJ4dDhfOFVsMm9I/YkszZnQwOWkwVzQ2/QjRaaXoyaEhnPQ"
-                alt="Street Food"
+                image="https://imgs.search.brave.com/3-AKqEuhiQVD4mA9KiksBiZqsGEIt1ZcVKhQ4JHqgTk/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9jZG4u/dGhld2lyZWN1dHRl/ci5jb20vd3AtY29u/dGVudC9tZWRpYS8y/MDIzLzA2L2xhcHRv/cHN1bmRlcjUwMC0y/MDQ4cHgtYWNlcmFz/cGlyZTNzcGluMTQu/anBn"
+                alt="Laptop"
             />
             <CardContent>
                 <Typography gutterBottom variant="h5" component="div">
-                Street Food
+                Laptops
                 </Typography>
                 <Typography variant="body2" color="text.secondary">
-                Biriyani , Fried Rice, Starters, Pizza etc...
+                Mac, HP, DELL etc...
                 </Typography>
             </CardContent>
             </CardActionArea>
@@ -60,15 +60,15 @@ function Hotel() {
             <CardMedia
                 component="img"
                 height="190"
-                image="https://imgs.search.brave.com/H0ARVtY8TXICPcDFzHFJ4mF26RGG12WevuOSHSheJ08/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvNzAy/NTQzMDEzL3Bob3Rv/L2luZGlhbi1jdWlz/aW5lLXRoYWxpLWJv/d2xzLW9uLXJlc3Rh/dXJhbnQtdGFibGUu/anBnP3M9NjEyeDYx/MiZ3PTAmaz0yMCZj/PWJYWVl3VXBidjZw/QXRIbmp6Sm9Ga1dN/N3NlZk1XOUNZSm94/MTNrMzRiOFk9"
-                alt="Indian Food"
+                image="https://imgs.search.brave.com/t5TxtENaD4JBTY3y-akiRW9X7HX2sKNkhl1p8oPf6sc/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9zLnlp/bWcuY29tL255L2Fw/aS9yZXMvMS4yL1Jm/V2pOVTZQNDNBQW1I/V25GN3A1aWctLS9Z/WEJ3YVdROWFHbG5h/R3hoYm1SbGNqdDNQ/VGsyTUR0b1BUVTBN/QS0tL2h0dHBzOi8v/bWVkaWEuemVuZnMu/Y29tL2VuL2dvYmFu/a2luZ3JhdGVzXzY0/NC8zZTMxODEyYjEx/ODE5NWUxMDI0MmRi/YzU5YzhmNjViMg"
+                alt="Electroins"
             /></a>
             <CardContent>
                 <Typography gutterBottom variant="h5" component="div">
-                Indian Food
+                Electronics
                 </Typography>
                 <Typography variant="body2" color="text.secondary">
-                Biriyani , Fried Rice, Starters, Pizza etc...
+                 Lights etc...
                 </Typography>
             </CardContent>
             </CardActionArea>
@@ -80,15 +80,15 @@ function Hotel() {
             <CardMedia
                 component="img"
                 height="190"
-                image="https://imgs.search.brave.com/5S4EF0nsNzWhcYl_JlymMQbuKCZ1WOQf60rHA7VqjIE/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvMTM2/NzQxMTMyOC9waG90/by9pbmRpYW4tZGlu/bmVyLmpwZz9zPTYx/Mng2MTImdz0wJms9/MjAmYz16NTFxX0dz/REZSMnYwWVVxMnNL/TDMzeWRtV0YyX1dl/UkZHQ3NaSW1VRk8w/PQ"
+                image="https://imgs.search.brave.com/QM6jBnVR3jjrFZ5BNqOSlnRkim5G_zKHa3tbtZGGpCc/rs:fit:500:0:0/g:ce/aHR0cHM6Ly90NC5m/dGNkbi5uZXQvanBn/LzAyLzkxLzc0Lzg3/LzM2MF9GXzI5MTc0/ODcwMF9vd1RCNG9K/UGtUVFllNUlhZ0hN/dE1zcHR6cEI2OGpT/bS5qcGc"
                 alt="Naan Hotel"
             /></a>
             <CardContent>
                 <Typography gutterBottom variant="h5" component="div">
-                Naan Hotel
+                Beauty Products
                 </Typography>
                 <Typography variant="body2" color="text.secondary">
-                Biriyani , Fried Rice, Starters, Pizza etc...
+                Lipstick, Eye Liner, Kajal etc...
                 </Typography>
             </CardContent>
             </CardActionArea>
@@ -100,15 +100,15 @@ function Hotel() {
             <CardMedia
                 component="img"
                 height="190"
-                image="https://imgs.search.brave.com/xm-OQ1wF96zxXDBiXx450Gvf9gD41P-ZvRYibJGJ-cc/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvMTA1/ODAyOTIyMC9waG90/by90YW5kb29yaS1j/aGlja2VuLmpwZz9z/PTYxMng2MTImdz0w/Jms9MjAmYz1jNnVl/Mmc3ZW8zZlBLakNF/b1NFeFhvczg1V1dX/bGFQYU9YbldGbWIw/OWNRPQ"
+                image="https://imgs.search.brave.com/DxUUAdC4GIqx3hSd-5M9B0sA6CXH5qj9VSa82OrEcJQ/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvMTE5/NDg2NzM3Ni9waG90/by9jaGFpcnMtaW4t/ZnVybml0dXJlLXN0/b3JlLmpwZz9zPTYx/Mng2MTImdz0wJms9/MjAmYz1DR1U5MXhn/ZDFJNVVhUlU4eEU1/TTVVcUVkTUZHblBE/OVppSU0tZldKdm13/PQ"
                 alt="Tandoori Chicken"
             /></a>
             <CardContent>
                 <Typography gutterBottom variant="h5" component="div">
-                Tandoori Chicken
+                Furniture
                 </Typography>
                 <Typography variant="body2" color="text.secondary">
-                Biriyani , Fried Rice, Starters, Pizza etc...
+                Chairs, Sofas, Tables etc...
                 </Typography>
             </CardContent>
             </CardActionArea>
@@ -120,15 +120,15 @@ function Hotel() {
             <CardMedia
                 component="img"
                 height="190"
-                image="https://imgs.search.brave.com/P2iwCfiBAJTpApYBHRRlazxM5JyG3rsrUVypsJg0oPA/rs:fit:500:0:0/g:ce/aHR0cHM6Ly90My5m/dGNkbi5uZXQvanBn/LzAwLzU3Lzg0Lzkw/LzM2MF9GXzU3ODQ5/MDgyX1RaYTdxOGxJ/UktYQ2dKcXNpdTRw/MDlwbU44RmtQMklp/LmpwZw"
+                image="https://imgs.search.brave.com/Cpn-8EH0yclQfqf2Er4jFZe63SdOfFiNZz2OXw98BNo/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9tLm1l/ZGlhLWFtYXpvbi5j/b20vaW1hZ2VzL0kv/NTFpZUZvZWctckwu/anBn"
                 alt="Pizza Hut"
             /></a>
             <CardContent>
                 <Typography gutterBottom variant="h5" component="div">
-                Pizza Hut
+                Grocery
                 </Typography>
                 <Typography variant="body2" color="text.secondary">
-                Biriyani , Fried Rice, Starters, Pizza etc...
+                 Pens, Milk etc...
                 </Typography>
             </CardContent>
             </CardActionArea>

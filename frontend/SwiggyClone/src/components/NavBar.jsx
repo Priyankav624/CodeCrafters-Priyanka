@@ -31,8 +31,8 @@ const NavBar = () => {
                 <> 
                     <Typography variant="h6" component={"span"} sx={{marginRight:"1rem"}}>{userName}</Typography>
                     <Button color="inherit" sx={{marginRight:"1rem"}} onClick={() => {
-                                navigate("/hotel")
-                    }}>Hotels</Button>
+                                navigate("/categories")
+                    }}>Categories</Button>
                     <Button color="inherit" sx={{marginRight:"1rem"}} onClick={() => {
                                 navigate("/order")
                     }}

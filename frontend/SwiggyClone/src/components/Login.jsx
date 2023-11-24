@@ -25,7 +25,7 @@ const Login = () => {
             userName: username,
             isLoading: false
         })
-          navigate('/hotel');
+          navigate('/categories');
       })
       .catch(err => console.error(err))
   }

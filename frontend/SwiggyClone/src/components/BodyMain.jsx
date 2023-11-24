@@ -5,7 +5,7 @@ import Deal from "./MainPage/Deal";
 
 const HomePage = () => {
   return (
-    <div style={{ margin:"-100px",  backgroundColor:"gainsboro"}}>
+    <div style={{ marginTop:"130px",  backgroundColor:"gainsboro"}}>
         <Home2 />
         <Catlog />
         <Deal />
