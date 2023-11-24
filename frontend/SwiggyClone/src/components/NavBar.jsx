@@ -3,7 +3,6 @@ import { AppBar, Button, Toolbar, Typography } from "@mui/material";
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
-import zIndex from '@mui/material/styles/zIndex';
 import {useSetRecoilState, useRecoilValue} from "recoil";
 import { userState } from "../store/atoms/user.js";
 import { userNameState } from "../store/selectors/userEmail"
@@ -16,13 +15,13 @@ const NavBar = () => {
 
   return (
     <>
-    <AppBar  style={{ position:"fixed",backgroundColor:"#fc8019"}}>
+    <AppBar  style={{ position:"fixed",backgroundColor:"#000000"}}>
         <Toolbar>
              <Typography variant="h6"  sx={{flexGrow: 1}}>
                 <a href = " http://localhost:5173/">
                 <img 
-                src="http://www.pngimagesfree.com/LOGO/S/Swiggy/Swiggy-Logo-Vector.png"
-                alt="Swiggy Logo"
+                src="https://imgs.search.brave.com/4456AxXu6O3bsEvXCKxEjJ6Bl4gwoVe8HtCiBQyBFFE/rs:fit:860:0:0/g:ce/aHR0cHM6Ly90NC5m/dGNkbi5uZXQvanBn/LzA0Lzk5LzcyLzA5/LzM2MF9GXzQ5OTcy/MDk5NV9zZm1Vb1dv/bTUwa3gyNUNZY09p/WUxWeEJPc3RkYjVq/ai5qcGc"
+                alt="Clothing"
                 style={{ margin: "15px", height: "70px", width: "95px" }}
           /> </a>
           
@@ -41,7 +40,7 @@ const NavBar = () => {
                     <Button color="inherit" sx={{marginRight:"1rem"}} onClick={() => {
                                 navigate("/myCart")
                     }}
-                    >My Cart</Button>
+                    >MyCart</Button>
                     <Button color="inherit" onClick={() => {
                             localStorage.setItem("token", null);
                             setUser({

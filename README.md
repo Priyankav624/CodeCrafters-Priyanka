@@ -10,6 +10,7 @@ Question No: 15
 Swiggy Clone E-Delivery App
 
 Abstract:
+
 The Swiggy project is a web application built using the MERN stack (MongoDB, Express.js, React, and Node.js) that aims to provide users with a seamless experience for browsing and ordering food online. The application covers various aspects, including user authentication, data fetching using Axios, responsive grid and flex layouts, state management with Recoil, and features such as browsing foods, selecting quantity and size, and logging out.
 
 Modules:

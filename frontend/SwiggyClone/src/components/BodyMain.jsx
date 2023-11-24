@@ -1,14 +1,16 @@
-import * as React from 'react';
-import HomeImages from './HomeImages';
-import Middle from './Middle';
+import React from "react";
+import Home2 from "./MainPage/Home2";
+import Catlog from "./MainPage/Catlog";
+import Deal from "./MainPage/Deal";
 
-const BodyMain = () => {
+const HomePage = () => {
   return (
-   <>
-    <HomeImages />
-    <Middle />
-   </>
+    <div style={{ margin:"-100px",  backgroundColor:"gainsboro"}}>
+        <Home2 />
+        <Catlog />
+        <Deal />
+    </div>
   )
 }
 
-export default BodyMain
+export default HomePage

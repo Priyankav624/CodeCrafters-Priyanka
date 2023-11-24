@@ -9,19 +9,19 @@ import axios from 'axios';
 function Hotel() {
     return ( 
         <div className='grid-container'style={{marginLeft:"70px", marginTop: "150px" , marginBottom: "90px" }}>
-           <h1 style={{fontWeight:"bold"}}>Restaurants With Great Offers Near Me</h1>
-           <h2 style={{marginBottom: "100px" }} >Veg & Non Veg Restaurents</h2>
+           <h1 style={{fontWeight:"bold"}}>Shop With Great Offers Near Me</h1>
+           <h2 style={{marginBottom: "100px" }} ></h2>
             <div className="card-grid">
         <div>
         <Card sx={{ maxWidth: 270 }}>
         <CardActionArea>
-            <a href='http://localhost:5173/order'>
+           
           <CardMedia
             component="img"
             height="190"
             image="https://imgs.search.brave.com/25LoUoVDyODoLeh6a5HxoaqoTL_yw088pvYZHb2r9XQ/rs:fit:860:0:0/g:ce/aHR0cHM6Ly90aHVt/YnMuZHJlYW1zdGlt/ZS5jb20vYi9vcmll/bnRhbC1mb29kLTI1/MTg5NjUyLmpwZw"
             alt="Velore Kitchen"
-          /></a>
+          />
           <CardContent>
             <Typography gutterBottom variant="h5" component="div">
               Velore Kitchen
@@ -35,13 +35,13 @@ function Hotel() {
       <div>
         <Card sx={{ maxWidth: 270 }}>
             <CardActionArea>
-                <a href='http://localhost:5173/order'>
+            
             <CardMedia
                 component="img"
                 height="190"
                 image="https://imgs.search.brave.com/aA5nEBZ7kZaJRPdBFdFYZ9WQUvPnKFfH-h--Qd-8mxE/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvNjEw/NzQyNzI2L3Bob3Rv/L3N0cmVldC1mb29k/LmpwZz9zPTYxMng2/MTImdz0wJms9MjAm/Yz12SGFLQ01oWXF5/WVJ4dDhfOFVsMm9I/YkszZnQwOWkwVzQ2/QjRaaXoyaEhnPQ"
                 alt="Street Food"
-            /></a>
+            />
             <CardContent>
                 <Typography gutterBottom variant="h5" component="div">
                 Street Food
